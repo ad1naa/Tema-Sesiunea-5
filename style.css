@@ -1,0 +1,92 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  background-color: blue;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin-left: 0px;
+}
+
+header nav ul li {
+  display: inline-block;
+  color: white;
+  padding: 0px;
+  list-style: none;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 25px;
+}
+
+main > div {
+  width: 70%;
+  display: inline-block;
+}
+
+.articol {
+  padding: 15px;
+  margin: 10px;
+}
+
+
+
+.articol > h2 + p::first-letter {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.articol ~ .articol {
+  border-top: 5px double gray;
+}
+
+.articol ~ .articol h2 {
+  color: cadetblue;
+  margin-top: 15px;
+}
+
+.articol ~ .articol > p::first-line {
+  font-style: italic;
+  color: burlywood;
+}
+
+.sidebar {
+  float: right;
+  width: 10%;
+  background-color: lightgrey;
+  padding: 50px;
+}
+
+.sidebar h3 ~ ul {
+  padding: 0px;
+}
+
+.sidebar ul > li {
+  list-style: none;
+}
+
+.sidebar a:visited {
+  color: gray;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(58, 58, 58);
+  color: #fff;
+  position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  padding: 0.5%;
+}
